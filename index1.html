@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        pre {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 0.25em 0.5em;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Git Commands for Branches and Merges</h1>
+
+<h2>Branches</h2>
+<pre>
+<code>git branch                                  # Show all local branches</code>
+<code>git branch -a                              # Show all branches (local and remote)</code>
+<code>git branch &lt;branch_name&gt;                  # Create a new branch</code>
+<code>git checkout &lt;branch_name&gt;                # Switch to a branch</code>
+<code>git checkout -b &lt;branch_name&gt;             # Create and switch to a new branch</code>
+<code>git branch -d &lt;branch_name&gt;               # Delete a local branch</code>
+<code>git push origin --delete &lt;branch_name&gt;  # Delete a remote branch</code>
+</pre>
+
+<h2>Merges</h2>
+<pre>
+<code>git merge &lt;branch_name&gt;                    # Merge a branch into the current branch</code>
+<code>git merge --ff-only &lt;branch_name&gt;         # Fast-forward merge</code>
+<code>git merge --no-ff &lt;branch_name&gt;           # Create a merge commit even if fast-forward is possible</code>
+<code>git merge -s octopus &lt;branch1&gt; &lt;branch2&gt;  # Octopus merge strategy</code>
+</pre>
+
+</body>
+</html>
